@@ -1,0 +1,28 @@
+h3
+{
+    text-align: center;
+    text-shadow: 0 0 10px rgb(97, 87, 87);
+}
+input
+{
+    font-size: medium;
+    width: 45%;
+}
+#sub
+{
+    font-size: medium;
+    align-items: center;
+    width: 18%;
+    background-color: rgb(3, 39, 71); 
+    color: #ffffff; 
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: 100px;
+    width:125px;
+    height: 40px;
+}
+#sub:hover
+{
+    background-color: indigo;
+}
