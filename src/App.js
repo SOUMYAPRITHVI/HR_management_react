@@ -4,6 +4,7 @@ import Home from './components/Home/index.js';
 import About from './components/About/index.js';
 import Employees from './components/Employees/index.js'
 import EmployeeDetails from './components/Employeedetail/index.js';
+import Error from './components/Error/index.js';
 import LeaveForm from './components/Leaveform/index.js';
 import { Route,Routes } from 'react-router-dom';
 
@@ -19,7 +20,8 @@ function App() {
         <Route path="employees" element={<Employees />}/>
         <Route path="employees/:id" element={<EmployeeDetails />}/>
         <Route path="addleaves" element={<LeaveForm />} />
-        </Routes>
+        <Route path="/error" element={<Error />}/>
+      </Routes>
     </div>
   );
 }
