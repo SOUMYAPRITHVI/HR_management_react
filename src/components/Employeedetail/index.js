@@ -19,10 +19,10 @@ export default function EmployeeDetails() {
 
     fetch(`http://localhost:5000/employees/${id}`)
       .then(response => response.json())
-      .then(dataemp => {
-        setEmployeedetails(dataemp);
+      .then(data => {
+        setEmployeedetails(data);
       })
-      .catch(error => console.error('Error fetching data:', error));
+      .catch(error => console.error('Fetching data error:', error));
   }, [id,updateEmployeeDetails,navigate]);
 
   const handleUpdateEmployeeDetails = () => {

@@ -25,13 +25,14 @@ const LeaveForm = ({ onLeaveSubmit }) => {
           if (response.ok) {
             onLeaveSubmit();
             setLeaveData({ date: '', reason: '' });
-            window.alert('Leave submitted successfully');
+            window.alert('Leave added successfully');
           } else {
-            window.alert('Leave not submitted because either data present in database or leaves taken exceeds maximum leaves');
+           
+            window.alert('Leave already taken in this date or Maximum number of leaves exceeds ');
             setLeaveData({ date: '', reason: '' });
         }
     }catch (error) {
-      window.alert('Leave not submitted due to same data present in database');
+      window.alert('Leave not submitted ');
     }
 
   };
